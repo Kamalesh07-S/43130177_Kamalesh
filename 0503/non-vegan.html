@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+           text-align:left;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #7e5353;
+            padding: 20px;
+        }
+
+        .grid-container {
+            display: grid;
+            padding-top: 50px;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-auto-rows: 200px;
+            gap: 15px;
+            max-width: 1000px;
+            width: 100%;
+            padding-bottom: 50px;
+        }
+
+        .grid-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, height 0.4s ease-in-out;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            display: block;
+            border-radius: 10px;
+            
+        }
+        h1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-bottom: 20px;
+
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            bottom: 40px;
+            padding-bottom: 40px;
+            text-align: left;
+        }
+     a{ 
+        display: block;
+        text-align: center;
+        color: rgb(85, 100, 58);
+        border: #ddd2d2;
+        box-sizing: border-box;
+        background-color: rgb(197, 204, 184);
+        
+     }
+        
+        .grid-item:(1) { grid-column: span 2; grid-row: span 2; }
+        .grid-item:(2) { grid-column: span 1; grid-row: span 1; }
+        .grid-item:(3) { grid-column: span 1; grid-row: span 2; }
+        .grid-item:(4) { grid-column: span 1; grid-row: span 1; }
+        .grid-item:(5) { grid-column: span 1; grid-row: span 1; }
+        .grid-item:(6) { grid-column: span 2; grid-row: span 2; }
+        .grid-item:(7) { grid-column: span 2; grid-row: span 1; }
+        
+
+       
+        .grid-item:hover {
+            transform: scale(1.1); 
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1>BIRIYANI</h1>
+    <div> <img src="img3.jpg" alt="img3"></div>
+    <p>Biryani is a beloved and aromatic rice dish originating from the Indian subcontinent. 
+        It is known for its rich flavors, fragrant spices, and the unique layering technique that sets it apart from other rice-based dishes. Traditionally made with long-grain basmati rice, meat (chicken, mutton, fish, or prawns),
+         or vegetables, and an array of aromatic spices, biryani is a festive and celebratory dish enjoyed across South Asia and beyond.The word "biryani" is derived from the Persian words "birian" (fried before cooking) and "birinj" (rice). It is believed that biryani was introduced to India by Persian travelers and Mughal rulers. Over time, regional variations of biryani developed, incorporating local flavors and cooking styles.
+
+Some of the most popular types of biryani include:
+
+Hyderabadi Biryani – A royal dish with spicy and flavorful layers of rice and meat, often cooked using the Dum (slow-cooking) method.
+Lucknowi (Awadhi) Biryani – More delicate in spice, this version is cooked using the traditional pukki (pre-cooked) style, where rice and meat are cooked separately before layering.
+Kolkata Biryani – Known for its mild flavors and the unique addition of potatoes and boiled eggs.
+Malabar Biryani – A coastal South Indian variety made with short-grain Jeerakasala rice and flavored with coconut and curry leaves.
+Sindhi Biryani – A spicy version from Pakistan that includes yogurt, tomatoes, and dried plums for a tangy taste.
+</p>
+   
+</div>
+<h1>TANDORI</h1>
+<div><img src="img4.jpg" alt=""></div>
+<p>Tandoori: A Culinary Tradition of Flavorful Grilling
+    Tandoori refers to a style of cooking that originated in the Indian subcontinent, where food is marinated in a blend of spices and yogurt, then cooked in a cylindrical clay oven called a tandoor. This technique imparts a smoky, charred flavor that is both unique and delicious.
+    
+    Tandoori dishes are widely popular across India, Pakistan, and Afghanistan and have gained global recognition for their distinct taste, vibrant colors, and tender texture.
+    The origins of tandoori cooking can be traced back to ancient civilizations of the Indus Valley (2500 BCE), where early forms of clay ovens were used. However, the modern form of tandoori cooking became famous in the Mughal era (16th century) when it was refined by chefs serving the royal courts.
+
+One of the most significant moments in tandoori history came in the 1940s, when a Punjabi chef named Kundan Lal Gujral popularized Tandoori Chicken in Delhi. This led to the development of various tandoori dishes, including naan, kebabs, and tandoori seafood.
+    </p>
+    <div class="grid-container">
+        <div class="grid-item"><img src="image8.jpg" alt=""></div>
+        <div class="grid-item"><img src="image9.jpg" alt=""></div>
+        <div class="grid-item"><img src="image10.jpg" alt=""></div>
+        <div class="grid-item"><img src="image11.jpg" alt=""></div>
+        <div class="grid-item"><img src="image12.jpg" alt=""></div>
+        <div class="grid-item"><img src="image13.jpg" alt=""></div>
+        <div class="grid-item"><img src="image14.jpg" alt=""></div>
+    </div>
+<a href="food1.html">BACK</a>
+</body>
+</html>
